@@ -1,0 +1,11 @@
+.wp-block-getwid-instagram {
+    &.has-spacing-medium {
+        .wp-block-getwid-instagram__wrapper {
+            margin: -10px;
+        }
+
+        .wp-block-getwid-instagram__item {
+            padding: 10px;
+        }
+    }
+}

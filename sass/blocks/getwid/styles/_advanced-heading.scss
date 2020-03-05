@@ -1,0 +1,30 @@
+.wp-block-getwid-advanced-heading {
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+        margin-top: .2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    + .wp-block-getwid-advanced-heading {
+        margin-top: .25em;
+    }
+}

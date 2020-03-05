@@ -1,0 +1,20 @@
+.wp-block-getwid-icon-box {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include respond-to(md) {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .wp-block-getwid-icon-box__icon-container {
+        margin-bottom: 30px;
+    }
+
+    &.has-icon-left .wp-block-getwid-icon-box__icon-container {
+        margin: 0 30px 0 0;
+    }
+
+    &.has-icon-right .wp-block-getwid-icon-box__icon-container {
+        margin: 0 0 0 30px;
+    }
+}

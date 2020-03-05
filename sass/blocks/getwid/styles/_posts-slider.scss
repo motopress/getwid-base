@@ -1,0 +1,36 @@
+.wp-block-getwid-post-slider {
+    .wp-block-getwid-post-slider__post {
+        padding: 100px;
+        @include respond-to(sm) {
+            padding: 150px;
+        }
+
+        .wp-block-getwid-post-slider__post-overlay {
+            opacity: .4;
+        }
+
+        .wp-block-getwid-post-slider__post-content-wrapper {
+            text-align: left;
+            max-width: 650px;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .wp-block-getwid-post-slider__post-title {
+            color: #fff;
+
+            a {
+                color: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $color__link;
+                }
+            }
+        }
+
+        .wp-block-getwid-post-slider__post-excerpt {
+            color: #fff;
+        }
+    }
+}

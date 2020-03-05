@@ -1,0 +1,14 @@
+.wp-block-getwid-template-post-meta {
+    font-style: italic;
+    @include font-size(15/16);
+
+    &.has-direction-row {
+        > * {
+            margin-right: 5px;
+        }
+
+        p + div {
+            margin-left: 0;
+        }
+    }
+}

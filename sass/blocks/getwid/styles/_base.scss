@@ -1,0 +1,13 @@
+//.hentry .entry-content .getwid-columns,
+.getwid-columns {
+    margin-left: -11px;
+    margin-right: -11px;
+    @for $i from 1 through 12 {
+        &.getwid-columns-#{$i} {
+            > * {
+                padding-left: 11px;
+                padding-right: 11px;
+            }
+        }
+    }
+}

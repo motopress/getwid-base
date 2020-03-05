@@ -1,0 +1,33 @@
+.wp-block-getwid-post-carousel {
+    .wp-block-getwid-post-carousel__post {
+        border: 2px solid #edeef0;
+        background: #fff;
+
+        .wp-block-getwid-post-carousel__post-thumbnail {
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .wp-block-getwid-post-carousel__post-content-wrapper {
+            padding: 50px 40px;
+            width: 100%;
+        }
+
+        .wp-block-getwid-post-carousel__post-title {
+            @include font-size(24/16);
+
+            a {
+                color: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $color__link;
+                }
+            }
+        }
+
+        .wp-block-getwid-post-carousel__post-excerpt {
+            margin-top: 20px;
+        }
+    }
+}

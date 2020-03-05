@@ -1,0 +1,41 @@
+.wp-block-getwid-person {
+
+    .wp-block-getwid-person__image + .wp-block-getwid-person__content-wrapper {
+        margin-top: 1.875rem;
+    }
+
+    .wp-block-getwid-person__content-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .wp-block-getwid-social-links {
+            order: 0;
+            margin: 0;
+
+            &:not(:only-child) {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        .wp-block-getwid-person__title {
+            order: 1;
+            font-family: $font__headings;
+            color: $color__headings;
+            @include font-size(24/16);
+            font-weight: 500;
+            letter-spacing: -.7px;
+        }
+
+        .wp-block-getwid-person__subtitle {
+            order: 2;
+            font-family: $font__headings;
+            @include font-size(17/16);
+            letter-spacing: 0;
+        }
+
+        .wp-block-getwid-person__content {
+            order: 3;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font__headings;
+    clear: both;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    color: $color__headings;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: -.7px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h1 {
+    @include font-size(48/16);
+}
+
+h2 {
+    @include font-size(38/16);
+}
+
+h3 {
+    @include font-size(29/16);
+}
+
+h4 {
+    @include font-size(24/16);
+}
+
+h5 {
+    @include font-size(22/16);
+}
+
+h6 {
+    @include font-size(14/16);
+    text-transform: uppercase;
+}

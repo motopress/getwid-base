@@ -1,0 +1,57 @@
+.wp-block-getwid-social-links {
+
+    $color__link-hover: #68c5f9;
+
+    @include font-size(18/16);
+
+    .wp-block-getwid-social-links__wrapper {
+        transition: all .3s ease;
+    }
+
+    .wp-block-getwid-social-links__link {
+        &:hover {
+            .wp-block-getwid-social-links__wrapper {
+                color: $color__link-hover;
+
+                &.has-text-color.has-blue-color {
+                    color: $color__link;
+                }
+            }
+        }
+
+    }
+
+    &.has-icons-stacked {
+        .wp-block-getwid-social-links__link {
+            .wp-block-getwid-social-links__wrapper {
+                padding: 1em;
+            }
+
+            &:hover {
+                .wp-block-getwid-social-links__wrapper {
+                    color: #fff;
+                    background: $color__link-hover;
+
+                    &.has-background.has-blue-background-color {
+                        background: $color__link;
+                    }
+                }
+            }
+        }
+    }
+
+    &.has-icons-framed {
+        .wp-block-getwid-social-links__link {
+            .wp-block-getwid-social-links__wrapper {
+                padding: 1em;
+                border-width: 2px;
+            }
+
+            &:hover {
+                .wp-block-getwid-social-links__wrapper {
+                    color: $color__link-hover;
+                }
+            }
+        }
+    }
+}

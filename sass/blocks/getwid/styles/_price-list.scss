@@ -1,0 +1,21 @@
+.wp-block-getwid-price-list {
+    align-items: center;
+
+    &.has-dots {
+        .wp-block-getwid-price-list__price-line {
+            border-bottom: 5px dotted currentColor;
+        }
+
+        &:not(.has-text-color) {
+            .wp-block-getwid-price-list__price-line {
+                border-bottom: 5px dotted #f1f4f7;
+            }
+        }
+    }
+
+    & &__content-wrapper {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            flex: 1 0;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.wp-block-getwid-person {
+
+    .wp-block-getwid-person__content-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .editor-testimonial__title-wrapper {
+            order: 1;
+        }
+
+        .editor-testimonial__subtitle-wrapper {
+            order: 2;
+        }
+
+        .editor-testimonial__content-wrapper {
+            order: 3;
+        }
+    }
+
+}

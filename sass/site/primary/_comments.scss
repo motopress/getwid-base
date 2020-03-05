@@ -1,0 +1,181 @@
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.comments-area {
+    margin: 6.25rem auto 0;
+    max-width: $content-max-width;
+    padding-bottom: 6.25rem;
+    border-bottom: 8px dotted $background__dotted-border;
+
+    .comments-title,
+    .comment-reply-title {
+        @include font-size(28/16);
+    }
+
+    .comments-title {
+        margin-bottom: 3.75rem;
+    }
+
+    .comment-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        + .comment-respond {
+            margin-top: 6.25rem;
+        }
+
+        .children {
+            list-style: none;
+            padding-left: 2.5rem;
+        }
+    }
+
+    .comment {
+        .comment-body {
+            min-height: 200px;
+
+            + .comment-respond {
+                margin-top: 3.75rem;
+            }
+        }
+    }
+
+    .comment,
+    .pingback {
+        margin-top: 1.875rem;
+
+        .comment-body {
+            border: 2px solid $color__border-comments;
+            position: relative;
+            padding: 1.25rem;
+            @include respond-to(sm) {
+                padding: 3.125rem;
+            }
+            @include respond-to(md) {
+                padding: 3.125rem 3.125rem 3.125rem 12.5rem;
+            }
+        }
+    }
+
+    .pingback {
+        .comment-body {
+            padding-left: 3.125rem;
+        }
+    }
+
+    .comment-author {
+        .avatar {
+            border-radius: 50%;
+            float: left;
+            margin-right: 1.25rem;
+            @include respond-to(md) {
+                float: none;
+                margin: 0;
+                position: absolute;
+                left: 3.125rem;
+                top: 3.125rem;
+            }
+        }
+
+        .says {
+            display: none;
+        }
+
+        .fn {
+            @include font-size(22/16);
+            font-weight: 500;
+            font-family: $font__headings;
+            color: $color__headings;
+            @media screen and (max-width: $screen-sm-max) {
+                display: inline-block;
+                margin-top: .875rem;
+            }
+
+            a {
+                color: inherit;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .comment-metadata {
+        @include font-size(.9375);
+        color: $color__text-secondary;
+        font-style: italic;
+
+        a {
+            color: inherit;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .comment-meta {
+        margin-bottom: 1.25rem;
+        @include respond-to(md) {
+            margin-bottom: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media screen and (max-width: $screen-sm-max) {
+            &:after {
+                display: table;
+                content: '';
+                clear: both;
+            }
+        }
+    }
+
+    .reply {
+        margin-top: 1.875rem;
+
+        .comment-reply-link {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-family: $font__headings;
+            color: $color__reply-link;
+            @include font-size(1);
+
+            &:hover {
+                color: $color__link;
+                text-decoration: none;
+            }
+
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .no-comments {
+        margin-top: 3.75rem;
+    }
+}
+
+.comment-respond {
+    @include respond-to(md) {
+        max-width: 50%;
+    }
+
+    .comment-notes {
+        @include font-size(.9375)
+    }
+}

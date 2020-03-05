@@ -1,0 +1,44 @@
+.wp-block-getwid-accordion {
+
+    //Specific variables for this block
+
+    $border_color: #ebeef1;
+    $border_width: 2px;
+
+    background: #fff;
+
+    .wp-block-getwid-accordion__header {
+        padding: 1em 1.25em;
+
+        a {
+            color: inherit;
+        }
+
+        &-wrapper {
+            margin-bottom: -2px;
+            border: #{$border_width} solid #{$border_color};
+
+            &:first-child {
+                border: #{$border_width} solid #{$border_color};
+            }
+
+            &.ui-state-active,
+            &:hover {
+                .wp-block-getwid-accordion__icon,
+                a {
+                    color: $color__link;
+                }
+            }
+        }
+    }
+
+    .wp-block-getwid-accordion__icon {
+        color: inherit;
+    }
+
+    .wp-block-getwid-accordion__content {
+        margin-top: 2px;
+        border: 0;
+    }
+}
+

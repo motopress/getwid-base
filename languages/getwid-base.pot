@@ -1,0 +1,375 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Getwid Base\n"
+"POT-Creation-Date: 2020-03-05 11:58+0200\n"
+"PO-Revision-Date: 2017-05-25 15:36+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: inc/tgmpa\n"
+
+#: 404.php:19
+msgid "Oops!"
+msgstr ""
+
+#: 404.php:20
+msgid "That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:28
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:31 inc/customizer.php:42
+#, php-format
+msgctxt "Default footer text. %1$s - current year."
+msgid "Copyright &copy; %1$s.  All Rights Reserved."
+msgstr ""
+
+#: functions.php:52 functions.php:299
+msgid "Primary"
+msgstr ""
+
+#: functions.php:137
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:139 functions.php:148 functions.php:159 functions.php:169
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:146
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:157
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:167
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:269
+msgctxt "Work Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:278
+msgctxt "PT Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:304
+msgid "Color 1"
+msgstr ""
+
+#: functions.php:309
+msgid "Color 2"
+msgstr ""
+
+#: functions.php:314
+msgid "Color 3"
+msgstr ""
+
+#: functions.php:319
+msgid "Color 4"
+msgstr ""
+
+#: functions.php:324
+msgid "Color 5"
+msgstr ""
+
+#: functions.php:329
+msgid "Color 6"
+msgstr ""
+
+#: header.php:42
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "Footer Options"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer.php:52
+#, php-format
+msgid ""
+"Use %1$s to insert the current year. Does not work in the Live Preview."
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "Footer Widgets Layout"
+msgstr ""
+
+#: inc/customizer.php:66
+msgid ""
+"Layout will be adjusted automatically if some of sidebars have no widgets. "
+"Columns width in percentage. Slash means new row."
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Primary Menu Color"
+msgstr ""
+
+#: inc/customizer.php:88
+msgid "Color of the primary menu in header."
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Background color for the header."
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Primary color of buttons, links etc."
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Secondary color like buttons hover etc."
+msgstr ""
+
+#: inc/customizer.php:139
+msgid "Additional Color"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Background color of search modal window, gradient on pages and posts."
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "Main text color."
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Headings Color"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Headings text color."
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Form Fields & Blocks Background"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid ""
+"Form fields and some blocks background color, e.g. recent posts, custom "
+"post type, posts carousel, testimonials."
+msgstr ""
+
+#: inc/customizer.php:191
+msgid "Form Fields, Blocks Border and Lines Color"
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "Form fields and some blocks border & lines color."
+msgstr ""
+
+#: inc/customizer.php:204
+msgid "Form Fields Border Focus Color"
+msgstr ""
+
+#: inc/customizer.php:205
+msgid "Form fields border color on focus."
+msgstr ""
+
+#: inc/customizer.php:221
+#, php-format
+msgid "Block Editor - %1$s"
+msgstr ""
+
+#: inc/demo-import.php:10
+msgid "Important note before importing sample data."
+msgstr ""
+
+#: inc/demo-import.php:11
+msgid "Data import is generally not immediate and can take up to 10 minutes."
+msgstr ""
+
+#: inc/demo-import.php:12
+msgid ""
+"After you import this demo, you will have to configure the Contact Form "
+"and Google Maps API key separately."
+msgstr ""
+
+#: inc/template-functions.php:104 inc/template-functions.php:105
+msgid "More"
+msgstr ""
+
+#: inc/template-tags.php:39
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:77
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:102 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:201
+msgid "Next Post"
+msgstr ""
+
+#: inc/template-tags.php:209
+msgid "Previous Post"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:9
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-loop.php:47 template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-loop.php:58 template-parts/content-page.php:24
+#: template-parts/content.php:51
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Getwid Base"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://motopress.com/products/getwid-base/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Getwid Base is a clean and lightweight Gutenberg theme designed to work "
+"seamlessly with the new block-based editor and Getwid plugin - a "
+"collection of custom blocks for Gutenberg. Use Getwid Theme to build a "
+"small or midsize business website, site for a creative or digital agency, "
+"startup launch or product landing page, as well as any other kind of "
+"business or portfolio website. Thanks to the powerful combination of core "
+"Gutenberg blocks and advanced block library enabled by Getwid plugin, "
+"you'll be free to build and customize content rich pages with no coding "
+"skills involved. Theme Demo: https://getwid.getmotopress.com"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "MotoPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://motopress.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page"
+msgstr ""

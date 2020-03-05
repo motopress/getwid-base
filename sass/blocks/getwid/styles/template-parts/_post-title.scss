@@ -1,0 +1,17 @@
+.wp-block-getwid-template-post-title {
+    &:not(.has-text-color) {
+        a {
+            color: inherit;
+
+            &:hover {
+                color: $color__link;
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

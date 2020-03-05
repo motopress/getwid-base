@@ -1,0 +1,13 @@
+.wp-block-getwid-template-post-link {
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    @include font-size(1);
+    font-family: $font__headings;
+    font-weight: 700;
+
+    &:not(.has-text-color) {
+        a {
+            color: #64c0f4;
+        }
+    }
+}

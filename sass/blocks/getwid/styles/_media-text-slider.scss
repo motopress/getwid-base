@@ -1,0 +1,8 @@
+.wp-block-getwid-media-text-slider {
+    .wp-block-getwid-media-text-slider-slide__content {
+        padding: 80px 50px;
+        @include respond-to(sm) {
+            padding: 80px 125px;
+        }
+    }
+}

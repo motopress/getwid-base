@@ -1,0 +1,23 @@
+.wp-block-getwid-progress-bar {
+    .wp-block-getwid-progress-bar__header {
+        margin-bottom: .5em;
+    }
+
+    .wp-block-getwid-progress-bar__percent {
+        color: $color__headings;
+    }
+
+    .wp-block-getwid-progress-bar__bar {
+        height: 4px;
+
+        &:not(.has-background) {
+            background-color: #ebeef1;
+        }
+    }
+
+    .wp-block-getwid-progress-bar__progress {
+        &:not(.has-text-color) {
+            color: #8f4ec7;
+        }
+    }
+}

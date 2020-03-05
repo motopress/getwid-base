@@ -1,0 +1,110 @@
+/*
+Theme Name: getwid_base
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+/*
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+*/
+.hidden {
+  display: none;
+}
+
+.search-toggle {
+  margin-left: 0;
+  margin-right: 1.25rem;
+}
+
+.site-branding .custom-logo-link + .site-title {
+  margin-left: 0;
+  margin-right: .625rem;
+}
+
+.main-navigation .menu-item-has-children > a:after {
+  margin-left: 0;
+  margin-right: 13px;
+}
+
+.main-navigation ul ul {
+  padding-left: 0;
+  padding-right: 1.25em;
+}
+
+@media (min-width: 992px) {
+  .main-navigation ul ul {
+    left: auto;
+    padding-right: 0;
+  }
+}
+
+.main-navigation ul ul ul {
+  left: 100%;
+}
+
+.main-navigation ul ul ul.toleft {
+  right: 100%;
+  left: auto;
+}
+
+.main-navigation ul ul .menu-item-has-children > a:after {
+  right: auto;
+  left: 1.25rem;
+}
+
+.primary-menu-wrapper .dropdown-toggle {
+  right: auto;
+  left: 0;
+}
+
+.main-navigation .menu-item-has-children > a {
+  padding-right: 1.25rem;
+  padding-left: 2.5rem;
+}
+
+.main-navigation ul ul .menu-item-has-children > a {
+  padding-right: 1.25rem;
+  padding-left: 2.75rem;
+}
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+  float: right;
+  text-align: right;
+}
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+  float: left;
+  text-align: left;
+}
+
+.post-navigation-wrapper .previous .lnr {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 0;
+  margin-left: 1.875rem;
+}
+
+.post-navigation-wrapper .next .lnr {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 1.875rem;
+  margin-left: 0;
+}
+
+.comments-area .comment .comment-body {
+  padding: 3.125rem 12.5rem 3.125rem 3.125rem;
+}
+
+.comments-area .comment-author .avatar {
+  left: auto;
+  right: 3.125rem;
+}

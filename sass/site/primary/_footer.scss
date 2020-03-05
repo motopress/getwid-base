@@ -1,0 +1,22 @@
+.site-footer {
+    margin-top: .625rem;
+    padding: 3.125rem $padding-site-mobile;
+    @include respond-to(sm) {
+        padding: 3.125rem $padding-site;
+    }
+
+    .site-info {
+        text-align: center;
+        font-style: italic;
+        @include font-size(13/16);
+        color: $color__text-secondary;
+    }
+}
+
+.has-custom-text-color {
+    .site-footer {
+        .site-info {
+            color: inherit;
+        }
+    }
+}

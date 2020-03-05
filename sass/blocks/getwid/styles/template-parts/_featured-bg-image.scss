@@ -1,0 +1,18 @@
+.wp-block-getwid-template-post-featured-background-image {
+    padding: 100px;
+    @include respond-to(sm) {
+        padding: 150px;
+    }
+
+    .wp-block-getwid-template-post-featured-background-image__content {
+        > * {
+            &:not(.has-text-color) {
+                color: #fff;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

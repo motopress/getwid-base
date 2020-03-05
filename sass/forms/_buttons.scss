@@ -1,0 +1,32 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.more-link {
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: $color__background-button;
+    @include font-size(.9375);
+    font-family: $font__headings;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1.36666em 2.5em;
+    transition: all .3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background: $color__background-button-hover;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}

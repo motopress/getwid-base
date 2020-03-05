@@ -1,0 +1,22 @@
+.wp-block-getwid-counter {
+    .wp-block-getwid-counter__wrapper {
+        .wp-block-getwid-counter__number {
+            @include font-size(48/16);
+            font-family: $font__headings;
+            font-weight: 500;
+            line-height: 1;
+
+            &:not(.has-text-color) {
+                color: $color__headings;
+            }
+        }
+
+        .wp-block-getwid-counter__suffix {
+            padding-top: .875em;
+        }
+
+        .wp-block-getwid-counter__prefix {
+            padding-bottom: .875em;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+th,
+td {
+    border: 2px solid $color__border-table;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 1.5rem;
+    table-layout: fixed;
+    /* Prevents HTML tables from becoming too wide */
+    width: 100%;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+thead th {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font__headings;
+    color: $color__headings;
+}
+
+th,
+td {
+    padding: 0.8em;
+    @include respond-to(md) {
+        padding: 1.3em;
+    }
+}

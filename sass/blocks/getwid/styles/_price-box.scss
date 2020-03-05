@@ -1,0 +1,50 @@
+.wp-block-getwid-price-box {
+    $color__border: #edeef0;
+    $color__pricing: #8f4ec7;
+
+    border: 2px solid $color__border;
+    padding: 3.75rem 1.875rem;
+
+    &.has-text-color {
+        .wp-block-getwid-price-box__pricing {
+            color: inherit;
+        }
+
+        .wp-block-getwid-price-box__title {
+            color: inherit;
+        }
+    }
+
+    .wp-block-getwid-price-box__title {
+        color: $color__headings;
+        margin-bottom: 2.5rem;
+        letter-spacing: normal;
+    }
+
+    h6.wp-block-getwid-price-box__title {
+        @include font-size(1);
+    }
+
+    .wp-block-getwid-price-box__pricing {
+        color: $color__pricing;
+        font-family: $font__headings;
+        font-weight: 500;
+
+        .wp-block-getwid-price-box__currency {
+            @include font-size(33/16);
+            vertical-align: baseline;
+        }
+
+        .wp-block-getwid-price-box__amount {
+            @include font-size(33/16);
+        }
+
+        .wp-block-getwid-price-box__period {
+            vertical-align: baseline;
+        }
+    }
+
+    .wp-block-getwid-price-box__features {
+        margin-bottom: 3.75rem;
+    }
+}

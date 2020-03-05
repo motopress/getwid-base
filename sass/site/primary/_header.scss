@@ -1,0 +1,238 @@
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+
+    .custom-logo-link {
+        + .site-title {
+            margin-left: .625rem;
+        }
+    }
+}
+
+.site-title {
+    @include font-size(27/16);
+    font-family: $font__main;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+
+    a {
+        color: $color__headings;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:focus,
+        &:active {
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
+
+.site-description {
+    font-family: $font__headings;
+    @include font-size(13/16);
+    margin: 0;
+    display: none;
+}
+
+
+.site-header {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: .875rem 2.5rem;
+    border-bottom: 2px solid $color__lines;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.has-custom-color {
+        .main-navigation,
+        .search-toggle:not(:hover),
+        .menu-toggle,
+        .dropdown-toggle,
+        .primary-menu-more-toggle {
+            color: inherit;
+        }
+
+        @media screen and(max-width: $screen-sm-max) {
+            .main-navigation ul ul {
+                color: inherit;
+            }
+        }
+    }
+
+    &.has-custom-background {
+        border-color: transparent;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-toggle {
+    display: none;
+    @include respond-to(md) {
+        display: block;
+    }
+    background: transparent;
+    color: $color__text-main;
+    @include font-size(20/16);
+    padding: .5em;
+    margin-left: 1.25rem;
+
+    &:hover {
+        background: transparent;
+        color: $color__link;
+    }
+}
+
+.main-navigation-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+
+.search-modal {
+    position: fixed;
+    top: -100%;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    padding: $padding-site;
+    //opacity: 0;
+    transition: all .75s ease;
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        min-width: 0;
+        min-height: 0;
+        transform: translateY(-50%) translateX(50%);
+        background: $background__search-modal;
+        transition: min-width .3s linear .5s, min-height .3s linear .5s, border-radius .3s linear .2s;
+    }
+
+    &.opened {
+        //opacity: 1;
+        top: 0;
+        bottom: 0;
+
+        &:before {
+            min-width: 200%;
+            min-height: 200%;
+            border-radius: 0;
+            transition: min-width .3s linear, min-height .3s linear, border-radius .3s linear .3s;
+        }
+
+        .search-form-wrapper {
+            opacity: 1;
+            transition: opacity 1s ease .5s;
+        }
+    }
+
+    .search-form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .2s ease;
+    }
+
+    .search-form {
+        border: 0;
+        padding-left: 3.125rem;
+
+        .search-submit {
+            display: none;
+        }
+
+        label {
+            margin: 0;
+        }
+
+        .search-field {
+            background: transparent;
+            border: 0;
+            font-family: $font__headings;
+            color: $color__headings;
+            padding: 0;
+            line-height: 1.2;
+            @include font-size(52/16);
+            text-align: center;
+
+            &:focus {
+                &::placeholder {
+                    opacity: .5;
+                }
+            }
+
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.close-search-modal {
+    padding: 0;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    background: transparent;
+    color: $color__headings;
+    @include font-size(1.75);
+
+    &:hover {
+        background: transparent;
+        color: $color__link;
+    }
+}
+
+.primary-menu-wrapper {
+    @include respond-to(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.primary-menu-more {
+    display: none;
+    @include respond-to(md) {
+        display: block;
+    }
+
+    .primary-menu-more-toggle {
+        padding: 0;
+        background: transparent;
+        border: 0;
+        color: inherit;
+        height: 54px;
+        width: 50px;
+        font-size: 25px;
+
+        &.is-empty {
+            display: none;
+        }
+
+        svg {
+            margin-top: 5px;
+            width: 24px;
+            height: 24px;
+            fill: $color__headings;
+        }
+    }
+}
