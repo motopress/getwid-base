@@ -3636,59 +3636,90 @@ p.has-background {
   max-width: 300px;
 }
 
-.entry-content .has-primary-color {
+.wp-block-group.has-background {
+  padding: 20px;
+}
+
+.wp-block-group.has-background .wp-block-group__inner-container > *.allignfull {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.wp-block-cover {
+  padding: 20px;
+}
+
+.wp-block-cover__inner-container > *,
+.wp-block-group__inner-container > * {
+  max-width: 938px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-cover__inner-container > *.alignwide,
+.wp-block-group__inner-container > *.alignwide {
+  max-width: 1130px;
+}
+
+.wp-block-cover__inner-container > *.alignfull,
+.wp-block-group__inner-container > *.alignfull {
+  max-width: none;
+  width: auto;
+}
+
+:root .has-primary-color {
   color: #8f4ec7;
 }
 
-.entry-content .has-primary-background-color {
+:root .has-primary-background-color {
   background-color: #8f4ec7;
 }
 
-.entry-content .has-light-blue-color {
+:root .has-light-blue-color {
   color: #f3f8fb;
 }
 
-.entry-content .has-light-blue-background-color {
+:root .has-light-blue-background-color {
   background-color: #f3f8fb;
 }
 
-.entry-content .has-blue-color {
+:root .has-blue-color {
   color: #68c5f9;
 }
 
-.entry-content .has-blue-background-color {
+:root .has-blue-background-color {
   background-color: #68c5f9;
 }
 
-.entry-content .has-gray-color {
+:root .has-gray-color {
   color: #9ea6ac;
 }
 
-.entry-content .has-gray-background-color {
+:root .has-gray-background-color {
   background-color: #9ea6ac;
 }
 
-.entry-content .has-light-gray-color {
+:root .has-light-gray-color {
   color: #f3f9fd;
 }
 
-.entry-content .has-light-gray-background-color {
+:root .has-light-gray-background-color {
   background-color: #f3f9fd;
 }
 
-.entry-content .has-dark-blue-color {
+:root .has-dark-blue-color {
   color: #2c3847;
 }
 
-.entry-content .has-dark-blue-background-color {
+:root .has-dark-blue-background-color {
   background-color: #2c3847;
 }
 
-.entry-content .has-light-violet-color {
+:root .has-light-violet-color {
   color: #f6eefc;
 }
 
-.entry-content .has-light-violet-background-color {
+:root .has-light-violet-background-color {
   background-color: #f6eefc;
 }
 

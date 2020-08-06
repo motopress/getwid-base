@@ -424,7 +424,44 @@ p.has-background {
     }
 }
 
-.entry-content {
+.wp-block-group {
+    &.has-background {
+        padding: 20px;
+
+        .wp-block-group__inner-container {
+            > * {
+                &.allignfull {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+            }
+        }
+    }
+}
+
+.wp-block-cover {
+    padding: 20px;
+}
+
+.wp-block-cover__inner-container,
+.wp-block-group__inner-container {
+    > * {
+        max-width: $content-max-width-page;
+        margin-left: auto;
+        margin-right: auto;
+
+        &.alignwide {
+            max-width: $alignwide-width;
+        }
+
+        &.alignfull {
+            max-width: none;
+            width: auto;
+        }
+    }
+}
+
+:root {
     .has-primary-color {
         color: #8f4ec7;
     }

@@ -82,7 +82,7 @@ if ( ! function_exists( 'getwid_base_setup' ) ) :
 			'height'      => 63,
 			'width'       => 63,
 			'flex-width'  => true,
-			'flex-height' => false,
+			'flex-height' => true,
 		) );
 
 
