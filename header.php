@@ -28,16 +28,22 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 <div id="page" class="site">
 
-	<div class="search-modal" id="search-modal">
-		<button class="close-search-modal" id="close-search-modal">
-			<span class="lnr lnr-cross"></span>
-		</button>
-		<div class="search-form-wrapper">
-			<?php
-			get_search_form();
-			?>
+	<?php
+	if(!getwid_base_hide_header_search()):
+	?>
+		<div class="search-modal" id="search-modal">
+			<button class="close-search-modal" id="close-search-modal">
+				<span class="lnr lnr-cross"></span>
+			</button>
+			<div class="search-form-wrapper">
+				<?php
+				get_search_form();
+				?>
+			</div>
 		</div>
-	</div>
+	<?php
+	endif;
+	?>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'getwid-base' ); ?></a>
 
@@ -79,18 +85,28 @@ if ( function_exists( 'wp_body_open' ) ) {
 						'menu_class'      => 'menu primary-menu',
 						'container_class' => 'primary-menu-container'
 					) );
+
+					if(!getwid_base_hide_header_search()):
 					?>
-					<div class="mobile-search-form-wrapper">
-						<?php
-						get_search_form();
-						?>
-					</div>
+						<div class="mobile-search-form-wrapper">
+							<?php
+							get_search_form();
+							?>
+						</div>
+					<?php
+					endif;
+					?>
 				</div>
 			</nav><!-- #site-navigation -->
-
-			<button class="search-toggle" id="search-toggle">
-				<span class="lnr lnr-magnifier"></span>
-			</button>
+			<?php
+			if(!getwid_base_hide_header_search()):
+			?>
+				<button class="search-toggle" id="search-toggle">
+					<span class="lnr lnr-magnifier"></span>
+				</button>
+			<?php
+			endif;
+			?>
 		</div>
 	</header><!-- #masthead -->
 

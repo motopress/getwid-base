@@ -33,6 +33,25 @@ function getwid_base_customize_register( $wp_customize ) {
 		'title' => esc_html__( 'Theme Options', 'getwid-base' )
 	) );
 
+	$wp_customize->add_section( 'getwid_base_header', array(
+		'title' => esc_html__( 'Header Options', 'getwid-base' ),
+		'panel' => 'getwid_base_options'
+	) );
+
+	$wp_customize->add_setting( 'getwid_base_hide_header_search', array(
+		'default'           => false,
+		'type'              => 'theme_mod',
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'getwid_base_sanitize_checkbox'
+	) );
+
+	$wp_customize->add_control( 'getwid_base_hide_header_search', array(
+		'label'    => esc_html__( 'Hide Header Search?', 'getwid-base' ),
+		'section'  => 'getwid_base_header',
+		'type'     => 'checkbox',
+		'settings' => 'getwid_base_hide_header_search'
+	) );
+
 	$wp_customize->add_section( 'getwid_base_footer', array(
 		'title' => esc_html__( 'Footer Options', 'getwid-base' ),
 		'panel' => 'getwid_base_options'
@@ -265,6 +284,10 @@ function getwid_base_sanitize_radio( $input, $setting ) {
 
 	// If the input is a valid key, return it; otherwise, return the default.
 	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+}
+
+function getwid_base_sanitize_checkbox( $checked ) {
+	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
 
 function getwid_base_get_default_colors() {

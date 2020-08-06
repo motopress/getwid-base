@@ -174,3 +174,9 @@ function getwid_base_color_palette_colors( $colors ) {
 }
 
 add_filter( 'getwid_base_color_palette', 'getwid_base_color_palette_colors' );
+
+function getwid_base_hide_header_search() {
+	$option = get_theme_mod('getwid_base_hide_header_search', false);
+
+	return $option;
+}
