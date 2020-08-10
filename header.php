@@ -34,6 +34,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<div class="search-modal" id="search-modal">
 			<button class="close-search-modal" id="close-search-modal">
 				<span class="lnr lnr-cross"></span>
+				<span class="screen-reader-text"><?php esc_html_e('Close Search', 'getwid-base');?></span>
 			</button>
 			<div class="search-form-wrapper">
 				<?php
@@ -76,6 +77,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="lnr lnr-menu"></span> <span class="lnr lnr-cross"></span>
+					<span class="screen-reader-text"><?php esc_html_e('Menu', 'getwid-base');?></span>
 				</button>
 				<div class="primary-menu-wrapper">
 					<?php
@@ -103,6 +105,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 			?>
 				<button class="search-toggle" id="search-toggle">
 					<span class="lnr lnr-magnifier"></span>
+					<span class="screen-reader-text"><?php esc_html_e('Open Search', 'getwid-base');?></span>
 				</button>
 			<?php
 			endif;

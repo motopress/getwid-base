@@ -160,3 +160,31 @@
         }
     }
 }
+
+.tippy-box {
+    &[data-theme="translucent"],
+    &[data-theme="google"],
+    &[data-theme="dark"] {
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+
+    .tippy-content {
+        padding: 0;
+    }
+
+    .wp-block-getwid-image-hotspot__tooltip-title {
+        font-size: 1.1em;
+    }
+
+    .wp-block-getwid-image-hotspot__tooltip {
+        padding: .875rem;
+    }
+
+    .wp-block-getwid-image-hotspot__tooltip-content{
+        font-size: 13px;
+
+    }
+}

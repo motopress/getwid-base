@@ -26,7 +26,7 @@
 		var dropdownToggle = $('<button />', {
 			'class': 'dropdown-toggle',
 			'aria-expanded': false,
-			'html': '<span class="lnr lnr-chevron-down"></span>'
+			'html': '<span class="lnr lnr-chevron-down"></span><span class="screen-reader-text">Expand dropdown</span>'
 		});
 
 		container.find('.menu-item-has-children > a').after(dropdownToggle);

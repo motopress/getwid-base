@@ -65,7 +65,7 @@ p.has-drop-cap:not(:focus):first-letter {
 .wp-block-image figcaption {
   font-size: 15px;
   font-size: 0.9375rem;
-  color: #9ea6ac;
+  color: #707070;
   font-style: italic;
   margin: .875em 0 0 0;
 }
@@ -552,7 +552,7 @@ figure.wp-block-image:last-child {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
-  color: #9ea6ac;
+  color: #707070;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
@@ -593,7 +593,7 @@ figure.wp-block-image:last-child {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
-  color: #9ea6ac;
+  color: #707070;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
@@ -988,6 +988,27 @@ p.has-background {
 .wp-block-getwid-post-slider.alignfull .slick-prev,
 .wp-block-getwid-post-carousel.alignfull .slick-prev {
   left: 20px;
+}
+
+.tippy-box[data-theme="translucent"] a, .tippy-box[data-theme="google"] a, .tippy-box[data-theme="dark"] a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.tippy-box .tippy-content {
+  padding: 0;
+}
+
+.tippy-box .wp-block-getwid-image-hotspot__tooltip-title {
+  font-size: 1.1em;
+}
+
+.tippy-box .wp-block-getwid-image-hotspot__tooltip {
+  padding: .875rem;
+}
+
+.tippy-box .wp-block-getwid-image-hotspot__tooltip-content {
+  font-size: 13px;
 }
 
 .getwid-columns {
@@ -1904,7 +1925,7 @@ h6 + .wp-block-getwid-advanced-heading {
 }
 
 body {
-  color: #7b838b;
+  color: #6c727a;
   font-family: "PT Serif", serif;
   font-size: 17px;
   font-size: 1.0625rem;
@@ -2023,7 +2044,7 @@ a:hover, a:active {
   padding-left: 1.25rem;
   font-size: 17px;
   font-size: 1.0625rem;
-  color: #7b838b;
+  color: #6c727a;
 }
 
 @media (min-width: 992px) {
@@ -2509,7 +2530,7 @@ a:hover, a:active {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  color: #7b838b;
+  color: #6c727a;
 }
 
 .navigation.pagination .nav-links .page-numbers:last-child {
@@ -2535,7 +2556,7 @@ a:hover, a:active {
 
 .navigation.pagination .nav-links .next-icon,
 .navigation.pagination .nav-links .previous-icon {
-  border: solid #7b838b;
+  border: solid #6c727a;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 4px;
@@ -2612,14 +2633,14 @@ a:hover, a:active {
           justify-content: center;
   background: #f3f8fb;
   border-radius: 50%;
-  color: #7b838b;
+  color: #6c727a;
 }
 
 .post-navigation-wrapper .previous .meta,
 .post-navigation-wrapper .next .meta {
   display: block;
   font-style: italic;
-  color: #7b838b;
+  color: #6c727a;
   margin-bottom: .875rem;
 }
 
