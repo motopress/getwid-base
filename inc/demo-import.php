@@ -27,8 +27,8 @@ function getwid_base_ocdi_import_files() {
 	return array(
 		array(
 			'import_file_name'         => 'Demo Import 1',
-			'local_import_file'        => trailingslashit( get_template_directory() ) . 'assets/demo-data/getwid-base.xml',
-			'local_import_widget_file' => trailingslashit( get_template_directory() ) . 'assets/demo-data/getwid-base-widgets.wie',
+			'import_file_url'          => 'https://raw.githubusercontent.com/motopress/getwid-base/master/assets/demo-data/getwid-base.xml',
+			'import_widget_file_url'   => 'https://raw.githubusercontent.com/motopress/getwid-base/master/assets/demo-data/getwid-base-widgets.wie',
 			'import_preview_image_url' => '',
 			'import_notice'            => $import_notice,
 			'preview_url'              => 'https://getwid.getmotopress.com',
