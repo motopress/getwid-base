@@ -2,7 +2,7 @@
 Contributors: MotoPress
 Tags: one-column, full-width-template, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog, custom-logo, block-styles
 Requires at least: 5.0
-Tested up to: 5.5
+Tested up to: 5.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
