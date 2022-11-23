@@ -58,7 +58,7 @@ function getwid_base_customize_register( $wp_customize ) {
 	) );
 
 	$footer_default_text = _x(
-        '%2$s &copy; %1$s. All Rights Reserved.<br> <span style="font-size: .875em">Powered by <a href="https://motopress.com/products/getwid-base/" rel="nofollow">Getwid Base</a> WordPress theme.</span>',
+        '%2$s &copy; %1$s. All Rights Reserved.<br/><span style="font-size: .875em">Designed by <a href="https://motopress.com/" target="_blank" rel="noopener noreferrer nofollow">MotoPress</a>.</span>',
         'Default footer text. %1$s - current year, %2$s - site title.',
         'getwid-base'
     );

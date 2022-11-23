@@ -22,9 +22,9 @@ const build = () => {
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.messageOriginal %>")
         }))
-        .pipe(sass({outputStyle: 'expanded'})) /* compressed */
+        .pipe(sass({outputStyle: 'compressed'})) /* compressed, expanded */
         .pipe(autoprefixer(['last 4 versions']))
-        .pipe(lec({verbose: true, eolc: 'CRLF', encoding: 'utf8'}))
+        .pipe(lec({verbose: true, eolc: 'LF', encoding: 'utf8'}))
         .pipe(gulp.dest('./'))
 };
 
