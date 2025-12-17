@@ -37,6 +37,9 @@ Getwid Base theme is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
+= 1.1.6, Dec 17 2025 =
+* WordPress 6.9 compatibility.
+
 = 1.1.5, Nov 14 2024 =
 * Version bump.
 
